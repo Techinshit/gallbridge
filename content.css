@@ -1,0 +1,184 @@
+.gb-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.35rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0;
+  vertical-align: 1px;
+  font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+.gb-ip.gb-tone-mobile {
+  color: #143a86;
+  background: #d9e4ff;
+}
+
+.gb-ip.gb-tone-domestic {
+  color: #0d5c34;
+  background: #d7f3e3;
+}
+
+.gb-ip.gb-tone-foreign {
+  color: #8d2618;
+  background: #fde0d8;
+}
+
+.gb-ip.gb-tone-mixed {
+  color: #5c5348;
+  background: #ece7df;
+}
+
+.gb-uid {
+  color: #3d3428;
+  background: #f3ead8;
+  font-weight: 700;
+}
+
+.gb-uid.gb-tone-semi {
+  color: #143a86;
+  background: #e4ebff;
+  font-weight: 800;
+}
+
+.gb-time {
+  display: inline-block;
+  margin-left: 0.4rem;
+  color: #6d6458;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.gb-hidden {
+  display: none !important;
+}
+
+.gb-root tr.gb-current td {
+  background: #e7eefc !important;
+}
+
+.gb-root tr.gb-new td {
+  animation: gb-flash 2.6s ease;
+}
+
+@keyframes gb-flash {
+  from {
+    background: #fff1b8;
+  }
+  to {
+    background: transparent;
+  }
+}
+
+.gb-chip {
+  position: fixed;
+  z-index: 2147483000;
+  right: 16px;
+  bottom: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 0.85rem;
+  background: #1e1a16;
+  color: #f6f3ec;
+  font: 600 12px/1 "IBM Plex Sans KR", "Apple SD Gothic Neo", sans-serif;
+  box-shadow: 0 8px 24px rgb(20 16 12 / 28%);
+  cursor: pointer;
+}
+
+.gb-chip-error {
+  background: #8d2618;
+}
+
+.gb-blocknote {
+  margin: 0.75rem 0;
+  padding: 0.7rem 0.85rem;
+  border-radius: 10px;
+  background: #f3ead8;
+  color: #1e1a16;
+  font-size: 14px;
+}
+
+.gb-root.gb-font .gall_tit a,
+.gb-root.gb-font .gall_writer,
+.gb-root.gb-font .gall_date,
+.gb-root.gb-font .gall_num,
+.gb-root.gb-font .gall_count,
+.gb-root.gb-font .gall_recommend,
+.gb-root.gb-font .write_div,
+.gb-root.gb-font .cmt_txt {
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif !important;
+  font-size: var(--gb-font-size, 15px) !important;
+}
+
+.gb-root.gb-dark,
+.gb-root.gb-dark body {
+  background: #12141a !important;
+  color: #e7e4dc !important;
+  border-color: #2c313c !important;
+}
+
+.gb-root.gb-dark .gall_list,
+.gb-root.gb-dark .gall_list td,
+.gb-root.gb-dark .gall_list th,
+.gb-root.gb-dark .write_div,
+.gb-root.gb-dark .view_comment,
+.gb-root.gb-dark .cmt_info,
+.gb-root.gb-dark .comment_box,
+.gb-root.gb-dark li.ub-content {
+  background: #181b22 !important;
+  color: #e7e4dc !important;
+  border-color: #2c313c !important;
+}
+
+.gb-root.gb-dark a {
+  color: #d5def4 !important;
+}
+
+.gb-root.gb-dark tr.gb-current td {
+  background: #243052 !important;
+}
+
+.gb-root.gb-dark .gb-time {
+  color: #b7b1a6;
+}
+
+.gb-root.gb-dark .gb-uid {
+  color: #f3ead8;
+  background: #3a342c;
+}
+
+.gb-root.gb-dark .gb-uid.gb-tone-semi {
+  color: #d9e4ff;
+  background: #243052;
+}
+
+.gb-root.gb-dark .gb-ip.gb-tone-mobile {
+  color: #d9e4ff;
+  background: #1d335f;
+}
+
+.gb-root.gb-dark .gb-ip.gb-tone-domestic {
+  color: #d7f3e3;
+  background: #163628;
+}
+
+.gb-root.gb-dark .gb-ip.gb-tone-foreign {
+  color: #ffd9d0;
+  background: #4a241e;
+}
+
+.gb-root.gb-dark .gb-ip.gb-tone-mixed {
+  color: #ece7df;
+  background: #32302c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gb-root tr.gb-new td {
+    animation: none;
+    background: #fff6d4 !important;
+  }
+}

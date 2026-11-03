@@ -1,0 +1,61 @@
+:root {
+  color-scheme: light;
+  --ink: #1e1a16;
+  --muted: #746c62;
+  --line: #e3d9cc;
+  --bg: #fbf8f3;
+  --chip: #ebe4d8;
+  --accent: #2346b5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  width: 320px;
+  background: var(--bg);
+  color: var(--ink);
+  font: 14px/1.45 "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+#app { padding: 12px 12px 16px; }
+
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+header strong { font-size: 16px; }
+header span { color: var(--muted); font-size: 12px; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  border-top: 1px solid var(--line);
+}
+
+.row-text { display: flex; flex-direction: column; min-width: 0; }
+.row small { color: var(--muted); font-size: 11px; }
+
+.field { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; font-size: 13px; }
+
+textarea, input[type="range"] { width: 100%; }
+
+textarea {
+  min-height: 64px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px;
+  background: #efeae2;
+  color: inherit;
+  font: inherit;
+  resize: vertical;
+}
+
+.carriers { display: flex; gap: 12px; margin-top: 8px; font-size: 13px; }
+.carriers label { display: inline-flex; align-items: center; gap: 4px; min-height: 36px; }
